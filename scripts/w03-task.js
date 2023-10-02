@@ -17,7 +17,7 @@ document.querySelector('#addNumbers').addEventListener('click',addNumbers);
 
 
 /* Function Expression - Subtract Numbers */
-function subtract (number1, number2) {
+const subtract = function (number1, number2) {
     return number1 - number2;
 
 }
