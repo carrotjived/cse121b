@@ -1,0 +1,175 @@
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+nav ul li {
+    flex: 1 1 auto;
+    
+    
+}
+
+
+.active {
+    border-bottom: 1px solid yellow;
+}
+
+nav ul li a {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+    
+
+}
+p {
+    
+    color: black;
+}
+
+
+picture {
+    
+    grid-column: 1;
+    width: 55%;
+    height: 50%;
+    padding-right: -500px;
+    
+    
+}
+
+picture img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+#from-api {
+    height: 200px;
+    width: 500px;
+    border-radius: 15px;
+    border: 10px solid #32c0c1;
+    padding: 35px;
+    margin: 20px;
+    
+
+    
+
+}
+
+div #saved {
+    height: 100%;
+    width: 500px;
+    border-radius: 15px;
+    border: 10px solid #f53098;
+    padding: 35px;
+    margin: 20px;
+
+}
+
+#buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+#generate {
+    grid-column: 1;
+    margin: 10px;
+    background-color: #32c0c1;
+    border-radius: 50px;
+    border: 5px solid white;
+    height: 50px;
+    width: 200px;
+    color: white;
+    
+}
+
+#save {
+    grid-column: 2;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    background-color: #f53098;
+    border-radius: 50px;
+    border: 5px solid white;
+    color: white;
+
+
+}
+
+#generate:hover {
+    border-color: #f53098;
+}
+#save:hover{
+    border-color: #32c0c1;
+}
+
+#jokeDisplay{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+    font-weight: 100px;
+    font-family: 'Playpen Sans';
+    object-fit: contain;
+    color: #32c0c1;
+}
+
+#saved li {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+    font-weight: 100px;
+    font-family: 'Playpen Sans';
+    object-fit: contain;
+    color: #f53098;
+}
